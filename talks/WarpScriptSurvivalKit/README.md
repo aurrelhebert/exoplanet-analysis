@@ -46,7 +46,7 @@ Let's introduce how variables can be declared in WarpScript as we are going to u
 // Store it in a variable called hello
 'hello' STORE
 
-// Then push back hello vairable on the stack
+// Then push back hello variable on the stack
 $hello
 
 // and again

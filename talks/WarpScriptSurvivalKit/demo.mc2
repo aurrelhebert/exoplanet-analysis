@@ -19,7 +19,7 @@
 100 
 
 // GTS split label
-'observation' 
+'record' 
 
 TIMESPLIT
 
@@ -29,7 +29,7 @@ TIMESPLIT
 
     $gts                                // Series list or Singleton
     []                                  // Labels to compute equivalence class
-    { 'observation' '~[2-5]' }          // Labels map for selector
+    { 'record' '~[2-5]' }          // Labels map for selector
     filter.bylabels                     // Filter function operator 
 ]
 FILTER
@@ -57,7 +57,7 @@ BUCKETIZE
     MAP                                 // Series list or Singleton 0
     $bucketizedSeries                   // Series list or Singleton 1
 
-    [ 'observation' ]                   // Labels to compute equivalence class
+    [ 'record' ]                   // Labels to compute equivalence class
     op.sub                              // Apply function operator
 ]
 APPLY
